@@ -1,0 +1,130 @@
+<!DOCType html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <title> Registration page to login </title>
+    <script>
+        function validateForm() {
+    var name = document.forms["RegForm"]["Firstname"];
+    var mname = document.forms["RegForm"]["Middlename"];
+    var lname = document.forms["RegForm"]["Lasttname"];               
+    var email = document.forms["RegForm"]["Email"];    
+    var phone = document.forms["RegForm"]["Phonenumber"];    
+    var password = document.forms["RegForm"]["Password"]; 
+     
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your First name."); 
+        name.focus(); 
+        return false; 
+    } 
+    if (mname.value == "")                                  
+    { 
+        window.alert("Please enter your Middle name."); 
+        name.focus(); 
+        return false; 
+    } 
+    if (lname.value == "")                                  
+    { 
+        window.alert("Please enter your Last name."); 
+        name.focus(); 
+        return false; 
+    } 
+ 
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+ 
+    return true;         }
+        </script>
+    <style>
+body{
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+b{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size:larger;
+}
+h5{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+.button{
+    background-color: palevioletred;
+     font-style: normal;
+     border-radius: 8px;
+     width:5%;
+}
+
+input{
+    width:20%;
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+  }
+  
+  input :focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+  } 
+    </style>
+</head>
+<body>
+<center>
+     <b>
+         <u>
+             Registration page
+         </u>
+     </b>
+</center>
+<hr />
+<p>
+    <center><h2>Enter your details to register for login:</h2></center>
+</p>
+<form method="POST" action="registrationsuccessful.php" name="myForm"  onsubmit="return validateForm()">
+    <center>
+ <h5>Enter your First name: <input type="text" name="Firstname" placeholder="First name" /> </h5> 
+    <h5>Enter your middle name:<input type="text" name="Middlename"  placeholder="Middle name"/></h5>
+    <h5>Enter your last name: <input type="text" name="Lastname"  placeholder="Last name" /></h5>
+    
+    <h5>Enter your email id: <input type="email" name="Email" placeholder="E-mail"/></h5>
+    
+    <h5>Enter your date of birth: <input type="date"required /></h5>
+   
+    <h5>Enter your phone number: <input type="number"name="Phonenumber" placeholder="Phone Number"/></h5>
+   
+    <h5>Enter your password:   <input type="password" name="Password" placeholder="Password "/></h5>
+    <p><input type="submit" value="Submit" name="Submit" class="button">      
+        <input type="reset" value="Reset" name="Reset" class="button">   
+    </p>
+</center>
+</form>
+</body>
+</html>
